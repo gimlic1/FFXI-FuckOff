@@ -25,7 +25,7 @@ local blackListedWords = T{
 	'500/',
 	'500point',
 	'500./',
-	'1-99',
+	-- [2026-11-22 Fix] Was: '1-99', (unescaped '-' in Lua pattern matched zero-or-more '1's + '99', blocking any chat with '99'; line 19 already has '1%-99')
 	'500p',
 	'1M/1hour',
 	'/hr',
